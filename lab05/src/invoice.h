@@ -14,6 +14,8 @@ public:
     double subtotal();
     double taxes();
     double total();
+
+    vector<Item> getItems();
 private:
     vector<Item> items;
 };

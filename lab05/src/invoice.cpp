@@ -19,4 +19,9 @@ double Invoice::taxes() {
 
 double Invoice::total() {
     return subtotal() + taxes();
+
+}
+
+vector<Item> Invoice::getItems() {
+    return items;
 }
