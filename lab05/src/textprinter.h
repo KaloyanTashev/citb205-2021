@@ -6,6 +6,9 @@
 class TextPrinter {
 public:
     void print(std::ostream &out, Invoice invoice);
+private:
+    void printLineSeparator(std::ostream &out);
+    void printLineItem(std::ostream &out, Item item);
 };
 
 
