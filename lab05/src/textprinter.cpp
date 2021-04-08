@@ -14,6 +14,14 @@ void TextPrinter::print(std::ostream &out, Invoice invoice) {
         printLineItem(out, item);
         printLineSeparator(out);
     }
+
+   
+   
+   
+    out << setfill(' ');
+    out << setw(58+3) << right << "Subtotal";
+    out << "|";
+    out << setw(10) << right << invoice.total();
 }
 void TextPrinter::printLineItem(std::ostream &out, Item item){
 out << setfill(' ');

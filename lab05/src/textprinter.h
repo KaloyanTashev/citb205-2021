@@ -9,6 +9,7 @@ public:
 private:
     void printLineSeparator(std::ostream &out);
     void printLineItem(std::ostream &out, Item item);
+    void printSummary(std::ostream &out, string label, double value);
 };
 
 
