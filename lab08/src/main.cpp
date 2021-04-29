@@ -8,7 +8,7 @@ int main() {
     Product superMob("Super Mob", 12.90);
     Product teaCup("Tea Cup", 5.30);
     Product redWineGlass("Red Wine Glass", 8.60);
-
+    Product * p = new Product(redWineGlass);
     FixedDiscount *fiveOff = new FixedDiscount(5.0);
     PercentageDiscount *tenPercentsOff = new PercentageDiscount(10);
 

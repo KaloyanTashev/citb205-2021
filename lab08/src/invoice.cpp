@@ -1,6 +1,6 @@
 #include "invoice.h"
 
-void Invoice::add(Product product, int quantity) {
+void Invoice::add(Product &product, int quantity) {
     Item item(product, quantity);
     items.push_back(item);
 }

@@ -1,6 +1,6 @@
 #include "item.h"
 
-Item::Item(Product product, int quantity) : product(product) {
+Item::Item(Product &product, int quantity) : product(product) {
     this->quantity = quantity;
 }
 
@@ -12,6 +12,6 @@ int Item::getQuantity() {
     return quantity;
 }
 
-Product Item::getProduct() {
+Product & Item::getProduct() {
     return product;
 }
