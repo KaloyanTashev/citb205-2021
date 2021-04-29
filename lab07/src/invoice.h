@@ -12,14 +12,15 @@ using std::vector;
 class Invoice {
 public:
     void add(Product product, int quantity);
-    void add(Discount discount);
+    void add(Discount *discount);
     double subtotal();
     double taxes();
     double total();
-    double discounts();
+    double totalDiscounts();
     vector<Item> getItems();
 private:
     vector<Item> items;
+    vector<Discount> appliedDiscounts;
 };
 
 
